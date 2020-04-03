@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* header {
+            width: 100%;
+            height: 100px;
+            background-color: #7ecef3;
+        }
+        .content {
+            width: 100%;
+            display: flex;
+            position: absolute;
+            top: 100px;
+            bottom: 100px;
+        }
+        .left {
+            width: 200px;
+            background-color: #89c997;
+        }
+        .middle {
+            flex: 1;
+            background-color: #53b9be;
+        }
+        .right {
+            width: 200px;
+            background-color: #89c997;
+        }
+        footer {
+            width: 100%;
+            height: 100px;
+            position:absolute;
+            bottom: 0;
+            background-color: #7ecef3;
+        } */
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #7ecef3;
+        }
+        .content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 100px;
+            bottom: 100px;
+        }
+        .left {
+            width: 200px;
+            height: 100%;
+            float: left;
+            background-color: aquamarine;
+        }
+        .right {
+            width: 200px;
+            height: 100%;
+            float: right;
+            background-color: aquamarine;
+        }
+        .middle {
+            overflow: hidden;
+            height: 100%;
+            background-color: cadetblue;
+        }
+        footer {
+            width: 100%;
+            height: 100px;
+            position:absolute;
+            bottom: 0;
+            background-color: #7ecef3;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex布局 -->
+    <!-- <header></header>
+    <dvi class="content">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+    </dvi>
+    <footer></footer> -->
+
+    <!-- BFC布局 -->
+    <header></header>
+    <div class="content">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="middle"></div>
+    </div>
+    <footer></footer>
+</body>
+</html>

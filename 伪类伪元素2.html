@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+                color: block;
+                width: 300px;
+                padding: 10px;
+                border: 1px solid gray;
+            }
+            .content::before {
+                content: '我在前面啊';
+                margin-right: 10px;
+                padding: 5px;
+                color: red;
+                border: 2px dashed blue;
+                display: inline-block;
+            }
+            .content::after {
+                content: '我在后面啊';
+                margin-left: 10px;
+                padding: 5px;
+                color: red;
+                border: 2px dashed blue;
+                display: inline-block;
+            }
+    </style>
+</head>
+<body>
+    <div class="content">这里是内容</div>
+</body>
+</html>
